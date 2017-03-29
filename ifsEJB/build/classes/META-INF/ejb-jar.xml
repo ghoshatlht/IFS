@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>ifsEJB</display-name>
+
+<enterprise-beans>
+
+<!-- Session Beans -->
+<session >
+<description>IFSCategory Session Bean</description>
+<display-name>IFSCategory Session Bean</display-name>
+
+<ejb-name>IFSCategory</ejb-name>
+
+<home>com.cognizant.ifs.ejb.interfaces.IFSCategoryHome</home>
+<remote>com.cognizant.ifs.ejb.interfaces.IFSCategory</remote>
+<ejb-class>com.cognizant.ifs.ejb.bean.IFSCategoryBean</ejb-class>
+<session-type>Stateless</session-type>
+<transaction-type>Container</transaction-type>
+
+</session>
+<session >
+<description>IFSSubCategory Session Bean</description>
+<display-name>IFSSubCategory Session Bean</display-name>
+
+<ejb-name>IFSSubCategory</ejb-name>
+
+<home>com.cognizant.ifs.ejb.interfaces.IFSSubCategoryHome</home>
+<remote>com.cognizant.ifs.ejb.interfaces.IFSSubCategory</remote>
+<ejb-class>com.cognizant.ifs.ejb.bean.IFSSubCategoryBean</ejb-class>
+<session-type>Stateless</session-type>
+<transaction-type>Container</transaction-type>
+
+</session>
+<session >
+<description>IFSItem Session Bean</description>
+<display-name>IFSItem Session Bean</display-name>
+
+<ejb-name>IFSItem</ejb-name>
+
+<home>com.cognizant.ifs.ejb.interfaces.IFSItemHome</home>
+<remote>com.cognizant.ifs.ejb.interfaces.IFSItem</remote>
+<ejb-class>com.cognizant.ifs.ejb.bean.IFSItemBean</ejb-class>
+<session-type>Stateless</session-type>
+<transaction-type>Container</transaction-type>
+
+</session>
+
+<session >
+<description>IFSPreview Session Bean</description>
+<display-name>IFSPreview Session Bean</display-name>
+
+<ejb-name>IFSPreview</ejb-name>
+
+<home>com.cognizant.ifs.ejb.interfaces.IFSPreviewHome</home>
+<remote>com.cognizant.ifs.ejb.interfaces.IFSPreview</remote>
+<ejb-class>com.cognizant.ifs.ejb.bean.IFSPreviewBean</ejb-class>
+<session-type>Stateless</session-type>
+<transaction-type>Container</transaction-type>
+
+</session>
+
+
+<session >
+<description>IFSWishlist Session Bean</description>
+<display-name>IFSWishlist Session Bean</display-name>
+
+<ejb-name>IFSWishlist</ejb-name>
+
+<home>com.cognizant.ifs.ejb.interfaces.IFSWishlistHome</home>
+<remote>com.cognizant.ifs.ejb.interfaces.IFSWishlist</remote>
+<ejb-class>com.cognizant.ifs.ejb.bean.IFSWishlistBean</ejb-class>
+<session-type>Stateful</session-type>
+<transaction-type>Container</transaction-type>
+
+</session>
+
+</enterprise-beans>
+</ejb-jar>
